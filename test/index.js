@@ -17,5 +17,8 @@ test('Assertions with tape.', (assert) => {
   assert.same(canDivideIn(36), [1, 2, 3, 4, 6, 9, 12, 18, 36],
     'Recibe different value');
 
+  assert.same(canDivideIn('a'), new Error('Only numbers'),
+    'Return error');
+
   assert.end();
 });
